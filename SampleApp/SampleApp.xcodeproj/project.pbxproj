@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1C8FE221CEC3430037B04B /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C8FE121CEC3430037B04B /* PreferencesTableViewController.swift */; };
+		4C1C8FE421CEC3540037B04B /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C8FE321CEC3540037B04B /* FavouritesTableViewController.swift */; };
 		4C6C4C3221CC005900FCBB54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4C3121CC005900FCBB54 /* Images.xcassets */; };
 		4C92AFF621CAC10B00B4C218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92AFF521CAC10B00B4C218 /* AppDelegate.swift */; };
 		4C92AFF821CAC10B00B4C218 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92AFF721CAC10B00B4C218 /* HomeViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C1C8FE121CEC3430037B04B /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
+		4C1C8FE321CEC3540037B04B /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
 		4C6C4C3121CC005900FCBB54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C92AFF221CAC10B00B4C218 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C92AFF521CAC10B00B4C218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			children = (
 				4C92AFF521CAC10B00B4C218 /* AppDelegate.swift */,
 				4C92AFF721CAC10B00B4C218 /* HomeViewController.swift */,
+				4C1C8FE121CEC3430037B04B /* PreferencesTableViewController.swift */,
+				4C1C8FE321CEC3540037B04B /* FavouritesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1C8FE221CEC3430037B04B /* PreferencesTableViewController.swift in Sources */,
+				4C1C8FE421CEC3540037B04B /* FavouritesTableViewController.swift in Sources */,
 				4C92AFF821CAC10B00B4C218 /* HomeViewController.swift in Sources */,
 				4C92AFF621CAC10B00B4C218 /* AppDelegate.swift in Sources */,
 				4CBD7D7221CE36EA003F059D /* CustomTabBarController.swift in Sources */,
