@@ -8,25 +8,28 @@
 
 import UIKit
 
-class HomeViewController: UITableViewController {
-
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var featuredView: UIView!
+    @IBOutlet weak var listTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        <#code#>
-//    }
-//    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "someThing")
+        
+        return cell
+    }
+//
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        <#code#>
 //    }
