@@ -44,8 +44,8 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="QJU-VT-OHr" kind="relationship" relationship="viewControllers" id="LQb-eP-kJT"/>
-                        <segue destination="nGg-bi-EPT" kind="relationship" relationship="viewControllers" id="3hs-zA-EWE"/>
                         <segue destination="E2h-5b-bW8" kind="relationship" relationship="viewControllers" id="gqJ-QV-0Ne"/>
+                        <segue destination="nGg-bi-EPT" kind="relationship" relationship="viewControllers" id="3hs-zA-EWE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcm-xh-dcH" userLabel="First Responder" sceneMemberID="firstResponder"/>

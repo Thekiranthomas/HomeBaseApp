@@ -9,8 +9,8 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var featuredView: UIView!
-    @IBOutlet weak var listTableView: UITableView!
+    @IBOutlet weak var featuredView: UIView?
+    @IBOutlet weak var listTableView: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
