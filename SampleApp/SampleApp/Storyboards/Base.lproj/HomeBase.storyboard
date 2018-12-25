@@ -27,9 +27,9 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="0U8-Sl-ggp" kind="relationship" relationship="viewControllers" id="BSi-S9-n9V"/>
-                        <segue destination="PQ3-iA-2OJ" kind="relationship" relationship="viewControllers" id="mHC-Pi-IHa"/>
-                        <segue destination="E2h-5b-bW8" kind="relationship" relationship="viewControllers" id="gqJ-QV-0Ne"/>
+                        <segue destination="LME-Py-hwP" kind="relationship" relationship="viewControllers" id="BSi-S9-n9V"/>
+                        <segue destination="t8n-yy-VLw" kind="relationship" relationship="viewControllers" id="gqJ-QV-0Ne"/>
+                        <segue destination="bWr-D4-Wlg" kind="relationship" relationship="viewControllers" id="mHC-Pi-IHa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcm-xh-dcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -39,7 +39,7 @@
         <!--Preferences-->
         <scene sceneID="PpK-1A-4T4">
             <objects>
-                <tableViewController id="PQ3-iA-2OJ" customClass="PreferencesTableViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Preferences" id="PQ3-iA-2OJ" customClass="PreferencesTableViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Q4m-x0-OmO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,16 +59,16 @@
                             <outlet property="delegate" destination="PQ3-iA-2OJ" id="rii-8B-sZj"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Preferences" image="preferences_tabItem" id="Oh0-jm-b4J"/>
+                    <navigationItem key="navigationItem" title="Preferences" id="EMS-8o-d60"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSj-Zr-sLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="1211"/>
+            <point key="canvasLocation" x="1503.2" y="1210.344827586207"/>
         </scene>
         <!--Favourites-->
         <scene sceneID="jMA-FW-dwK">
             <objects>
-                <tableViewController id="0U8-Sl-ggp" customClass="FavouritesTableViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Favourites" id="0U8-Sl-ggp" customClass="FavouritesTableViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zf7-bu-bdi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,29 +88,29 @@
                             <outlet property="delegate" destination="0U8-Sl-ggp" id="sZ4-H1-r37"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Favourites" image="favourites_tabItem" id="chz-f2-84e"/>
+                    <navigationItem key="navigationItem" title="Favourites" id="LCv-pa-64J"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Lm-pZ-nkx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="-175"/>
+            <point key="canvasLocation" x="1503.2" y="-175.86206896551727"/>
         </scene>
-        <!--Home-->
+        <!--Home Base-->
         <scene sceneID="uBF-tZ-u1f">
             <objects>
-                <viewController title="Home" id="E2h-5b-bW8" customClass="HomeViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home Base" id="E2h-5b-bW8" customClass="HomeViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H5X-3I-dfh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkV-Xu-nGZ">
-                                <rect key="frame" x="0.0" y="71" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="167" width="375" height="128"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="edl-md-6Ia"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PJl-nZ-bQL">
-                                <rect key="frame" x="0.0" y="214" width="375" height="404"/>
+                                <rect key="frame" x="0.0" y="310" width="375" height="308"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="E2h-5b-bW8" id="ha6-o0-ahG"/>
@@ -130,20 +130,117 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gya-Ia-RJg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home_tabItem" id="FAq-Ws-qyr"/>
+                    <navigationItem key="navigationItem" title="Home Base" id="eYD-HO-Ytc">
+                        <rightBarButtonItems>
+                            <barButtonItem image="grid_icon" id="gfq-ha-Fn4">
+                                <color key="tintColor" red="0.063291139240506333" green="0.70455196481270221" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </barButtonItem>
+                            <barButtonItem image="list_icon" id="SKQ-ij-uhT">
+                                <color key="tintColor" red="0.063291139240506333" green="0.70455196481270221" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="featuredView" destination="PkV-Xu-nGZ" id="Y9W-Wn-1fc"/>
+                        <outlet property="gridItemButton" destination="gfq-ha-Fn4" id="hAI-HR-Ddg"/>
+                        <outlet property="listItemButton" destination="SKQ-ij-uhT" id="7HD-hy-uwP"/>
                         <outlet property="listTableView" destination="PJl-nZ-bQL" id="aPq-eP-xhL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVG-Tx-HFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1503.2" y="529.38530734632684"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="5CS-W9-Evi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LME-Py-hwP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favourites" image="favourites_tabItem" id="chz-f2-84e"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Qub-ut-eNx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0U8-Sl-ggp" kind="relationship" relationship="rootViewController" id="1cx-ke-H0y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7n-9y-EKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="-175.86206896551727"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="o4R-pC-ujT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t8n-yy-VLw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home_tabItem" id="FAq-Ws-qyr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Ykg-55-VPZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E2h-5b-bW8" kind="relationship" relationship="rootViewController" id="6R9-ja-iYZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vms-yr-xTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="564" y="529.38530734632684"/>
+        </scene>
+        <!--Preferences-->
+        <scene sceneID="5j5-Ob-9Kb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bWr-D4-Wlg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Preferences" image="preferences_tabItem" id="Oh0-jm-b4J"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Azt-fi-fTV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PQ3-iA-2OJ" kind="relationship" relationship="rootViewController" id="em6-Ie-JwH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzz-Jc-Xek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="1210.344827586207"/>
         </scene>
     </scenes>
     <resources>
         <image name="favourites_tabItem" width="384" height="384"/>
+        <image name="grid_icon" width="48" height="48"/>
         <image name="home_tabItem" width="418.90908813476562" height="418.90908813476562"/>
+        <image name="list_icon" width="48" height="48"/>
         <image name="preferences_tabItem" width="418.90908813476562" height="418.90908813476562"/>
     </resources>
 </document>
