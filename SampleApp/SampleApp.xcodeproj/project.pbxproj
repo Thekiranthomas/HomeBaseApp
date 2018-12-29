@@ -10,6 +10,8 @@
 		4C1C8FE221CEC3430037B04B /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C8FE121CEC3430037B04B /* PreferencesTableViewController.swift */; };
 		4C1C8FE421CEC3540037B04B /* FavouritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C8FE321CEC3540037B04B /* FavouritesTableViewController.swift */; };
 		4C6C4C3221CC005900FCBB54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4C3121CC005900FCBB54 /* Images.xcassets */; };
+		4C76BE1421D25DEC00198971 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C76BE1221D25DEB00198971 /* SplashViewController.swift */; };
+		4C76BE1521D25DEC00198971 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C76BE1321D25DEB00198971 /* SplashViewController.xib */; };
 		4C92AFF621CAC10B00B4C218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92AFF521CAC10B00B4C218 /* AppDelegate.swift */; };
 		4C92AFF821CAC10B00B4C218 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92AFF721CAC10B00B4C218 /* HomeViewController.swift */; };
 		4C92AFFB21CAC10B00B4C218 /* HomeBase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C92AFF921CAC10B00B4C218 /* HomeBase.storyboard */; };
@@ -22,6 +24,8 @@
 		4C1C8FE121CEC3430037B04B /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
 		4C1C8FE321CEC3540037B04B /* FavouritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewController.swift; sourceTree = "<group>"; };
 		4C6C4C3121CC005900FCBB54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C76BE1221D25DEB00198971 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4C76BE1321D25DEB00198971 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		4C92AFF221CAC10B00B4C218 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C92AFF521CAC10B00B4C218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C92AFF721CAC10B00B4C218 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				4C92AFF721CAC10B00B4C218 /* HomeViewController.swift */,
 				4C1C8FE121CEC3430037B04B /* PreferencesTableViewController.swift */,
 				4C1C8FE321CEC3540037B04B /* FavouritesTableViewController.swift */,
+				4C76BE1221D25DEB00198971 /* SplashViewController.swift */,
+				4C76BE1321D25DEB00198971 /* SplashViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 				4C92B00021CAC10C00B4C218 /* LaunchScreen.storyboard in Resources */,
 				4C6C4C3221CC005900FCBB54 /* Images.xcassets in Resources */,
 				4CBD7D7521CE37E1003F059D /* Assets.xcassets in Resources */,
+				4C76BE1521D25DEC00198971 /* SplashViewController.xib in Resources */,
 				4C92AFFB21CAC10B00B4C218 /* HomeBase.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +190,7 @@
 				4C1C8FE221CEC3430037B04B /* PreferencesTableViewController.swift in Sources */,
 				4C1C8FE421CEC3540037B04B /* FavouritesTableViewController.swift in Sources */,
 				4C92AFF821CAC10B00B4C218 /* HomeViewController.swift in Sources */,
+				4C76BE1421D25DEC00198971 /* SplashViewController.swift in Sources */,
 				4C92AFF621CAC10B00B4C218 /* AppDelegate.swift in Sources */,
 				4CBD7D7221CE36EA003F059D /* CustomTabBarController.swift in Sources */,
 			);
