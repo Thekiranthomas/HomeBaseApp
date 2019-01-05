@@ -11,23 +11,36 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var featuredView: UIView?
     @IBOutlet weak var listTableView: UITableView?
-    @IBOutlet weak var listItemButton: UIBarButtonItem?
-    @IBOutlet weak var gridItemButton: UIBarButtonItem?
+    
+    let numberOfSections = 3
+    let numberOfRows = 1
+    let rowHeight = 150
+    let collectionViewCellsPerRow = 10
+    
+    lazy var randomColors = {
+        return (0..<self.numberOfSections).map{ _ in return (0..<self.collectionViewCellsPerRow).map{ _ in UIColor.generateRandomColor()}}
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return numberOfSections
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return numberOfRows
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let cell = cell as? HomeTableViewCell else { return }
+        
+        cell.setDataSourceAndDelegate(dataSourceAndDelegate: self, forIndex: indexPath.section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "someThing")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeTableViewCell
         
         return cell
     }
@@ -37,7 +50,25 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return CGFloat(rowHeight)
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.randomColors()[collectionView.tag].count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionCell", for: indexPath)
+        
+        collectionViewCell.backgroundColor = self.randomColors()[collectionView.tag][indexPath.row]
+        
+        return collectionViewCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.bounds.size.width/2 - 20, height: collectionView.bounds.size.height - 20)
     }
 }
 

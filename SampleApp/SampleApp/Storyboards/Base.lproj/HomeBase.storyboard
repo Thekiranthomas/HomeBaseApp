@@ -112,6 +112,47 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="PJl-nZ-bQL">
                                 <rect key="frame" x="0.0" y="310" width="375" height="308"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" id="YoF-uG-g8i" customClass="HomeTableViewCell" customModule="SampleApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YoF-uG-g8i" id="6Hi-v3-Uk5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ECR-JS-EsH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nna-bs-MsX">
+                                                        <size key="itemSize" width="50" height="33.5"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionCell" id="KUq-uZ-6Lt">
+                                                            <rect key="frame" x="10" y="5" width="50" height="33.5"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="33.5"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                            </view>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ECR-JS-EsH" secondAttribute="bottom" id="3jh-Oi-xck"/>
+                                                <constraint firstItem="ECR-JS-EsH" firstAttribute="leading" secondItem="6Hi-v3-Uk5" secondAttribute="leading" id="B5c-Ns-Jr0"/>
+                                                <constraint firstAttribute="trailing" secondItem="ECR-JS-EsH" secondAttribute="trailing" id="G4K-pH-xYZ"/>
+                                                <constraint firstItem="ECR-JS-EsH" firstAttribute="top" secondItem="6Hi-v3-Uk5" secondAttribute="top" id="Wqs-g3-wXb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="ECR-JS-EsH" id="eoX-wV-EHH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="E2h-5b-bW8" id="ha6-o0-ahG"/>
                                     <outlet property="delegate" destination="E2h-5b-bW8" id="dpK-rh-gaB"/>
@@ -130,23 +171,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gya-Ia-RJg"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Base" id="eYD-HO-Ytc">
-                        <rightBarButtonItems>
-                            <barButtonItem image="grid_icon" id="gfq-ha-Fn4">
-                                <inset key="imageInsets" minX="0.0" minY="5" maxX="-5" maxY="-5"/>
-                                <inset key="largeContentSizeImageInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
-                                <color key="tintColor" red="0.063291139240506333" green="0.70455196481270221" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </barButtonItem>
-                            <barButtonItem image="list_icon" id="SKQ-ij-uhT">
-                                <inset key="imageInsets" minX="43" minY="5" maxX="0.0" maxY="-2"/>
-                                <color key="tintColor" red="0.063291139240506333" green="0.70455196481270221" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Home Base" id="eYD-HO-Ytc"/>
                     <connections>
                         <outlet property="featuredView" destination="PkV-Xu-nGZ" id="Y9W-Wn-1fc"/>
-                        <outlet property="gridItemButton" destination="gfq-ha-Fn4" id="hAI-HR-Ddg"/>
-                        <outlet property="listItemButton" destination="SKQ-ij-uhT" id="7HD-hy-uwP"/>
                         <outlet property="listTableView" destination="PJl-nZ-bQL" id="aPq-eP-xhL"/>
                     </connections>
                 </viewController>
@@ -241,9 +268,7 @@
     </scenes>
     <resources>
         <image name="favourites_tabItem" width="384" height="384"/>
-        <image name="grid_icon" width="48" height="48"/>
         <image name="home_tabItem" width="418.90908813476562" height="418.90908813476562"/>
-        <image name="list_icon" width="48" height="48"/>
         <image name="preferences_tabItem" width="418.90908813476562" height="418.90908813476562"/>
     </resources>
 </document>
